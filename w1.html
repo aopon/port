@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Aoi Sugasaki</title>
+<link href="index.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="w1.css" rel="stylesheet" type="text/css" media="all"/>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.4");</script>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$(".btn").click(function(){
+  var i = $(".btn").index(this)
+   var p = $(".content").eq(i).offset().top;
+  $('html,body').animate({scrollTop:p});
+  return false;
+});
+
+});
+
+   $(function() {
+      // スクロールしたときに実行
+      $(window).scroll(function () {
+         // 目的のスクロール量を設定(px)
+         var TargetPos = 350;
+         // 現在のスクロール位置を取得
+         var ScrollPos = $(window).scrollTop();
+         // 現在位置が目的のスクロール量に達しているかどうかを判断
+         if( ScrollPos >= TargetPos) {
+            // 達していれば表示
+            $("#topbutton").fadeIn();
+         }
+         else {
+            // 達していなければ非表示
+            $("#topbutton").fadeOut();
+         }
+      });
+   });
+
+</script>
+
+</head>
+
+<body>
+
+<div id="wrap">
+<div id="header">
+<a href="index.html"><img src="img/ロゴ.jpg" width="173" height="86"></a>
+<!--<div id="gnav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div><!--#gnav-->
+
+</div><!--#header-->
+
+<div id="pankuzu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="work.html">Work</a></li>
+<li>01 Colorful Life スケジューラー</li>
+</ul>
+</div><!--#pankuzu-->
+
+<div id="lnav">
+  <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+</div><!--#lnav-->
+
+<div id="main">
+
+
+
+<h1>01 Colorful Life スケジューラー</h2>
+
+<span class="hero" style="padding-top:50px; padding-right:150px;"><img src="img/スケジューラ.png" width="231" height="304" class="pict" /></span>
+
+<span class="a"><p>制作年度：１年次</p>
+<p>科目：情報表現入門</p>
+<p>使用言語：procerssing</p></span>
+
+<div class="b"><p><span class="first">彩</span>り鮮やかな可愛いデザイン</p>
+<p class="text">今ある生活をよりカラフルにする。女子大生が使いたいと思うような可愛い色味で染めた。</p>
+</div><!--.b-->
+
+<p><span class="first">生</span>きているように見える時計</p>
+<p class="text">人の感情は顔の表情で読み取ることが多い。そこで目の色によって行動を示唆する機能性を持たせた。また、アナログ時計に目を付けることで、生きているように見える。</p>
+
+
+<div id = "trans">
+<ul>
+<li class="btn">作品の詳細</li>
+<li class="btn">機能性</li>
+</ul>
+
+<div class = "content" >
+<div class="right" style="float:right; padding-top:20px; padding-bottom:20px;">
+
+<img src="img/挿絵１.png" width="256" height="192"></div>
+
+<h2>この作品は私の原点</h2>
+<p>この作品は私がプログラミングをして制作した初めての作品。慣れないプログラミングに、最初はとてもつまづいた。しかし、何回もエラーが出てそれを解除しての繰り返しをしていくうちに、どんどん力が付いた。そして、最終課題で出来上がったのは、この作品だ。</p>
+<span style="color:#F90"><p>ソースコードが形になる楽しさを初めて感じた！</p>
+
+
+</div><!--.content-->
+
+
+<div class = "content">
+<h2>６つの便利な機能</h2>
+<img src="img/機能性.png" height="492">
+</div><!--.content-->
+
+
+</div><!--trans-->
+
+<p id="topbutton">
+   <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">▲TOPへ戻る</a>
+</p>
+
+</div><!--#main-->
+
+</div><!--#wrap-->
+
+<div id="footer">
+<div id="nav">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+
+</div><!--#nav-->
+</div><!--#footer-->
+
+</body>
+</html>

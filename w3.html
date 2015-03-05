@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<title>Aoi Sugasaki</title>
+<link href="index.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="w1.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="w3.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="jquery/jquery.bxslider.css" rel="stylesheet" type="text/css" media="all"/>
+
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.4");</script>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.bxslider.js"></script>
+<script type="text/javascript">
+
+$(function(){
+$(".btn").click(function(){
+  var i = $(".btn").index(this)
+   var p = $(".content").eq(i).offset().top;
+  $('html,body').animate({scrollTop:p});
+  return false;
+});
+  
+  $('.btn_top').click(function () {
+    $('body,html').animate({ scrollTop: 0});
+    return false;
+  });
+});
+
+
+$(function(){
+$('.bxslider').bxSlider({
+  mode: 'fade',
+  captions: true
+});
+});
+
+
+   $(function() {
+      // スクロールしたときに実行
+      $(window).scroll(function () {
+         // 目的のスクロール量を設定(px)
+         var TargetPos = 350;
+         // 現在のスクロール位置を取得
+         var ScrollPos = $(window).scrollTop();
+         // 現在位置が目的のスクロール量に達しているかどうかを判断
+         if( ScrollPos >= TargetPos) {
+            // 達していれば表示
+            $("#topbutton").fadeIn();
+         }
+         else {
+            // 達していなければ非表示
+            $("#topbutton").fadeOut();
+         }
+      });
+   });
+
+
+
+</script>
+
+
+</head>
+
+
+
+
+
+<body>
+
+<div id="wrap">
+<div id="header">
+<a href="index.html"><img src="img/ロゴ.jpg" width="173" height="86"></a>
+<!--<div id="gnav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div><!--#gnav-->
+
+</div><!--#header-->
+
+
+<div id="pankuzu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="work.html">Work</a></li>
+<li>03 どっくヲタクになろう！進水式カレンダー</li>
+</ul>
+</div><!--#pankuzu-->
+
+<div id="lnav">
+  <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+</div><!--#lnav-->
+
+<div id="main">
+
+
+
+<h1>03 どっくヲタクになろう！進水式カレンダー</h1>
+
+<span class="hero" ><img src="img/カレンダー.jpg" width="285" height="369" class="pict" /></span>
+
+<span class="a"><p>制作年度：3年次</p>
+<p>科目：User Centerd Design(専攻外必修)</p>
+<p>使用スキル：Illustrator, Photoshop</p></span>
+
+<div class="b"><p><span class="first">人</span>のためにデザインをする楽しさ</p>
+<p class="text">現場の人と触れ合い、声を聞くことで相手への思いやりを持って新しい見方をデザインする。</p>
+</div><!--.b-->
+
+
+
+<div id = "trans">
+<ul>
+<li class="btn">プロセス</li>
+<li class="btn">作品紹介</li>
+</ul>
+
+
+
+
+<div class = "content" >
+<h2>プロセス</h2>
+
+<ul class="bxslider">
+  <li><img src="img/スライド１.png" width="852" height="606" /></li>
+  <li><img src="img/スライド２.png" width="852" height="599"></li>
+  <li><img src="img/スライド３.png" width="852" height="606"></li>
+  <li><img src="img/スライド４.png" width="852" height="606"></li>
+  <li><img src="img/スライド５.png" width="852" height="606"></li>
+  <li><img src="img/スライド６.png" width="852" height="606"></li>
+</ul>
+
+</div><!--.content-->
+<div class = "content">
+
+<div class="icon" style="text-align:center;"><img src="img/矢印.png" width="118" height="51"></div>
+<h2>進水式ヲタクになろう！どっくカレンダー　提案内容</h2>
+
+<div id="con2">
+<h3>プロセス</h3>
+<img src="img/プロセス２.png" width="465" height="354">
+</div><!--#con2-->
+
+<div id="con1">
+<h3>コンセプト</h3>
+<p><span style="font-weight:bold;font-size:18px;">1.</span>　従業員さんの気持ちを知り、同じ体験をすることによってどつく愛を深めよう！</p>
+<img src="img/作業員.png" width="166" height="99">
+
+<div id="con3" style="padding-top:25px;"><p><span style="font-weight:bold;font-size:18px;">2.</span>　進水式に訪れる人の視線を集め、その人からどつくを広めよう！</p>
+</div><!--#con3-->
+<img src="img/進水式.png" width="166" height="99">
+
+</div><!--#con1-->
+
+</div><!--.content-->
+
+<div class = "content">
+<h2>どっくヲタクになろう！進水式カレンダー　コンテンツ</h2>
+<img src="img/コンテンツ.png" width="844" height="205">
+
+<h2>どっくヲタクになろう！進水式カレンダー　内容</h2>
+<img src="img/コンテンツ２.png" width="839" height="523"></div><!--.con4-->
+
+
+
+
+</div><!--#trans-->
+
+
+<p id="topbutton">
+   <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">▲TOPへ戻る</a>
+</p>
+
+</div><!--#main-->
+
+</div><!--#wrap-->
+
+<div id="footer">
+<div id="nav">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+
+</div><!--#nav-->
+</div><!--#footer-->
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#c1{
+	float:left;
+	font-size:14px;
+	width:230px;
+margin-bottom:50px;
+
+	
+}
+
+span{
+line-height:17px;	
+}
+
+
+
+#c1 p{
+border-bottom:1px dotted #333;
+line-height:20px;
+}
+
+#c2{
+clear:both;	
+}
+
+#c2 p{
+	
+width:500px;
+}
+
+h2{
+color:#F60;	
+}
+
+
+  

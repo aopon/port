@@ -1,0 +1,74 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+form{
+	
+}
+
+form p{
+margin:0 0 20px 0;	
+}
+
+label{
+display:block;
+margin:0 0 5px 0;
+font-size:14px;	
+}
+
+input[type="text"],
+input[type="email"],
+textarea{
+width:50%;	
+padding: 5px 10px 5px 10px;
+border:dotted 1px #aaa;
+border-radius:0;
+background-image:none;
+background-color:#333;
+color:#FFF;
+font-size:14px;
+-webkit-appearance:none;
+-moz-box-sizing:border-box;
+-webkit-box-sizing:border-box;
+box-sizing:border-box;
+}
+
+textarea{
+height:80px;	
+}
+
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus{
+	border:solid 1px #0cf;
+	outline:none;
+	-webkit-box-shadow:0 0 5px 0 #0cf;
+	box-shadow:0 0 5px 0 #0cf;
+}
+
+input[type="submit"]{
+display:inline-block;
+padding:10px 30px 10px 30px;
+border:none;
+border-radius:0;
+background-image:none;
+color:#FFF;
+background-color:#33F;
+font-size:14px;
+text-decoration:none;
+cursor:pointer;
+-webkit-appearance:none;	
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus{
+outline:none;	
+background-color:#FF3;
+color:#333;
+}
+
+input[type="submit"]::-moz-focus-inner{
+padding:0;
+border:none;	
+}

@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.bxslider ul{
+padding: 0;
+margin: 0;
+}
+.bxslider ul li{
+margin: 0;
+padding: 0;
+list-style-position:outside;
+}
+
+.content ul{
+padding: 0;
+margin: 0;
+}
+
+.content ul li{
+margin: 0;
+padding: 0;
+list-style-position:outside;
+}
+
+#con1{
+padding-top:1px;	
+}
+
+
+#con1 p{
+width:300px;	
+}
+
+#con2{
+float:right;
+border-left:#666 solid 1px;;
+padding-left:50px;
+height:430px;
+}

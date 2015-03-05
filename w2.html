@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+
+<title>Aoi Sugasaki</title>
+<link href="index.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="w1.css" rel="stylesheet" type="text/css" media="all"/>
+<link href="w2.css" rel="stylesheet" type="text/css" media="all"/>
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<script type="text/javascript">google.load("jquery", "1.4");</script>
+<script type="text/javascript" src="jquery-1.8.3.min.js"></script>
+<script type="text/javascript">
+
+$(function(){
+$(".btn").click(function(){
+  var i = $(".btn").index(this)
+   var p = $(".content").eq(i).offset().top;
+  $('html,body').animate({scrollTop:p});
+  return false;
+});
+  
+ 
+});
+
+   $(function() {
+      // スクロールしたときに実行
+      $(window).scroll(function () {
+         // 目的のスクロール量を設定(px)
+         var TargetPos = 350;
+         // 現在のスクロール位置を取得
+         var ScrollPos = $(window).scrollTop();
+         // 現在位置が目的のスクロール量に達しているかどうかを判断
+         if( ScrollPos >= TargetPos) {
+            // 達していれば表示
+            $("#topbutton").fadeIn();
+         }
+         else {
+            // 達していなければ非表示
+            $("#topbutton").fadeOut();
+         }
+      });
+   });
+
+
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="wrap">
+<div id="header">
+<a href="index.html"><img src="img/ロゴ.jpg" width="173" height="86"></a>
+<!--
+<div id="gnav">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div><!--#gnav-->
+
+
+</div><!--#header-->
+
+<div id="pankuzu">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="work.html">Work</a></li>
+<li>02 新しい視点で映像を制作する</li>
+</ul>
+</div><!--#pankuzu-->
+
+
+<div id="lnav">
+  <ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+</div><!--#lnav-->
+
+<div id="main">
+
+
+
+<h1>02 新しい視点で映像を制作する</h1>
+
+<span class="hero"><img src="img/ムービー.jpg" width="375" height="444" class="pict" /></span>
+
+<span class="a"><p>制作年度：３年次</p>
+<p>科目：プロジェクト学習</p>
+<p>使用スキル：Premiere pro, After Effect</p></span>
+
+<div class="b"><p><span class="first">新</span>しい視点で表現をする面白さ</p>
+<p class="text">今まで普段見ることの出来ない視点から映像を撮ることで、新たな発見や気づきが得られる。</p>
+</div><!--.b-->
+
+<p><span class="first">高</span>校生をターゲットに映像で伝える</p>
+<p class="text">新しい視点からの映像で未来大学を紹介することによって、パンフレットなどの紙面では伝えきれない魅力を伝える。</p>
+
+<div id = "trans">
+<ul>
+<li class="btn">プロジェクトの仕事</li>
+<li class="btn">目的</li>
+<li class="btn">映像制作のプロセス</li>
+<li class="btn">実際に公開した映像</li>
+</ul>
+
+<div class = "content">
+<h2>プロジェクトの仕事内容</h2>
+<img src="img/空カメ１.png" width="806" height="500">
+</div><!--.content-->
+
+
+
+<div class = "content">
+<div id="con2">
+<h2>目的</h2>
+<ul>
+<li><p>函館市の舞台として未来大学の魅力を映像化して表現する</p><img src="img/画像１.png" width="175" height="147"></li>
+<li><p>高校生向けの大学説明会や公開用Webサイトなどで公開！</p><img src="img/画像２.png" width="175" height="148"></li>
+<li><p>パンフレットなどの紙面では伝えきれない部分を映像で伝える！<img src="img/画像３.png" width="175"></p></li>
+</ul>
+</div><!--#con2-->
+
+<div id="con3">
+<h2>新しい視点とは何？</h2>
+<p><span class="first">新</span>しい視点 = <span class="first" style="color:#0CF">空</span>からの視点</p>
+<ul>
+<li>パンフレットなどの紙面では伝えきれない事を映像を通して伝えようとする試み</li>
+<li>空カメラプロジェクトの醍醐味である「空撮」を用いて、今まで見た事のない視点から魅力を発見する事</li>
+</ul>
+<img src="img/ファントム１.png" width="291" height="163">
+<img src="img/ファントム２.png" width="291" >
+
+
+<h2>空撮をする機材</h2>
+
+
+<div id ="aaa">
+
+<div class="kizai">
+<h4>DJI. Phantom</h4>
+<img src="img/ファントム.png" width="246" height="138">
+<div class="text2"><p>主に、<span style="color:#F90">室外</span>の空撮を行うときに使う。GPSと気圧センサーを利用し、高精度なフライト管理を実現。３００Mの高さまでの撮影が可能。</p></div><!--.text2-->
+</div><!--.kizai-->
+
+<div class="kizai">
+<h4>AR.Drone</h4>
+<img src="img/ドローン.png" width="246" height="138">
+<div class="text2"><p>主に、<span style="color:#F90">室内</span>の空撮を行うときに使う。アプリにより、モバイル端末での操縦が可能。phantomに比べると精度や画質は落ちるが、操作が簡単である。</p></div><!--.text2-->
+
+</div><!--.kizai-->
+</div><!--#aaa-->
+
+</div><!--#con3-->
+</div><!--.content-->
+
+
+
+<div class = "content">
+<h2>映像制作のサイクル型プロセス</h2>
+<img src="img/プロセス.png" width="855" height="533">
+
+
+<h2>実際に描いた絵コンテ</h2>
+<span style="float:right"><img src="img/スキャン 6.jpg" width="313" height="407"></span>
+<p>脚本は、実際に頭で考えたストーリーを絵を描いてイメージを固めることが大事だ。細かいカメラワークや内容設定を固めることができ、効率よく撮影に取りかかることができる。</p>
+
+<img src="img/絵コンテ.png" width="473" height="346">
+
+</div><!--.content-->
+
+
+
+<div class = "content">
+<h2>完成した３つの映像作品を、高校生向けの大学説明会で上映！</h2>
+
+<div id="movie">
+<p>３つのテーマをグループで決定！</p>
+<img src="img/３つの映像.png" width="731" height="487">
+<img src="img/矢印.png" width="122" height="54">
+</div><!--#movie-->
+
+<div id="movie2">
+<p>北海道の多くの高校で上映した、私の監督作品はこちら！</p>
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZC5fwNwJDRI" frameborder="0" allowfullscreen></iframe>
+<img src="img/ムービー.png" width="561" height="246">
+</div><!--#movie2-->
+
+</div><!--.content-->
+</div><!--trans-->
+
+<p id="topbutton">
+   <a href="#top" onclick="$('html,body').animate({ scrollTop: 0 }); return false;">▲TOPへ戻る</a>
+</p>
+
+
+</div><!--#main-->
+
+</div><!--#wrap-->
+
+<div id="footer">
+<div id="nav">
+
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="profile.html">Profile</a></li>
+<li><a href="work.html">Work</a></li>
+<!--<li><a href="contact.html">Contact</a></li>-->
+</ul>
+
+</div><!--#nav-->
+</div><!--#footer-->
+
+</body>
+</html>

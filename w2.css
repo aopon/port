@@ -1,0 +1,59 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#con2 ul{
+list-style:none;
+
+
+}
+#con2 li{
+float:left;
+display:inline;
+width:210px;
+border:#999 2px solid;
+margin: 0 20px;  
+text-align: center;  
+
+}
+#con2 li+li{
+}
+
+#con2 li p{
+padding-left:15px;
+width:180px;
+font-size:12px;
+
+
+}
+#con3{
+padding-top:30px;
+clear:both;	
+}
+
+.text2 p{
+width:246px;
+}
+
+.kizai{
+width:250px;
+float:left;
+margin-right:30px;
+}
+#movie{
+	text-align:center;	
+}
+#movie2{
+	text-align:center;	
+}
+#movie p{
+text-align:left;	
+padding-left:290px;
+}
+
+#movie2 p{
+text-align:left;	
+padding-left:240px;
+}
+#con3 ul li{
+font-size:12px;	
+}

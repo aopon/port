@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+#rotate1 img{
+
+float:left;
+padding-top:80px;
+padding-right:30px;
+-moz-transform: rotate(-5deg);
+-webkit-transform: rotate(-5deg);
+-o-transform: rotate(-5deg);
+-ms-transform: rotate(-5deg);
+transform: rotate(-5deg);
+
+}
+
+#rotate img{
+
+-moz-transform: rotate(5deg);
+-webkit-transform: rotate(5deg);
+-o-transform: rotate(5deg);
+-ms-transform: rotate(5deg);
+transform: rotate(5deg);
+
+}
+

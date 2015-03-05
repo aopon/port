@@ -1,0 +1,205 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body {
+ background-color:#FFF;
+    color:#333;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+p{
+	font-size:14px;	
+}
+
+
+#wrap{
+font-size : 100%;
+/*margin:30px 100px 30px 100px;*/
+
+margin:0 auto;
+width:980px;
+}
+#header{
+margin-top:30px;
+}
+
+
+
+#lnav{
+/*border:#000 solid 1px;*/	
+margin-top:30px;
+clear:both;	
+width:150px;
+float:left;
+}
+#lnav ul{
+list-style:none;
+overflow:hidden;
+	margin: 0;
+padding: 0;
+}
+
+#lnav ul li{
+	margin: 0;
+padding: 0;
+list-style-position:outside;	
+}
+
+#lnav li a{
+padding-left:0px;
+line-height:40px;
+font-family:Arial, Helvetica, sans-serif;
+text-decoration:none;
+
+}
+
+#lnav li a{
+    display: inline-block;
+    color: #99F;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -ms-transition: 0.5s;
+    transition: 0.5s;
+}
+ 
+#lnav li a:hover {
+	
+	color:#F60;
+    -webkit-transform: rotate(-5deg);
+    -moz-transform: rotate(-5deg);
+    -o-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+}
+
+
+
+#pankuzu{
+	/*
+padding-top:30px;
+padding-bottom:10px;
+/*border-bottom:#333 1px dotted;*/	
+margin-left:-30px;
+}
+
+#pankuzu li{
+display:inline;
+font-size:75%;
+/*text-align:center;*/
+color:#F90;
+}
+
+#pankuzu a{
+color:#999;
+padding-right:15px;
+background: url(img/icon.png) right center no-repeat;
+background-size:10px;
+
+
+
+}
+
+#pankuzu li a:hover{
+color:#F90;
+}
+
+
+
+
+#main{
+/*border:#000 solid 1px;*/	
+margin-left:150px;
+padding-top:20px;
+margin-bottom:50px;
+width:850px;
+
+}
+
+#footer{
+
+clear:both;
+width:100%;
+/*
+border:#000 solid 1px;*/	
+}
+#footer ul{
+margin-top:45px;
+margin-left:50px;
+margin-right:50px;
+
+list-style:none;
+border-bottom:#CCC solid 1px;
+overflow:hidden;
+
+}
+#footer li{
+float:left;
+width:100px;
+display:inline;
+
+}
+
+#footer li a{
+color:#666;
+text-decoration:none;
+
+}
+#footer li a:hover{
+color:#CCC;	
+}
+
+h2{
+color:#f60;	
+font-size:18px;
+}
+
+#main2{
+margin-top:50px;	
+}
+
+/*
+ul{
+padding: 0;
+margin: 0;
+}
+li {
+	
+margin: 0;
+padding: 0;
+list-style-position:outside;
+
+font-size:14px;
+}
+*/
+
+#topbutton {
+      /* ▼表示位置を画面の右下に固定 */
+      position: fixed; /* ←表示場所を固定 */
+      bottom: 100px;   /* ←下端からの距離 */
+      left: 100px;    /* ←右端からの距離 */
+      width: 7em;     /* ←横幅 */
+
+      /* ▼最初は非表示にしておく */
+      display: none;
+
+      /* ▼配色・配置・文字の装飾など */
+      background-color: #2525aa; /* ←背景色 */
+      opacity: 0.75;             /* ←透明度 */
+      border-radius: 24px;       /* ←角丸の半径 */
+      text-align: center;    /* ←文字の位置 */
+      font-size: 120%;       /* ←文字サイズ */
+      font-weight: bold;     /* ←文字の太さ */
+      margin: 0px;    /* ←外側の余白 */
+      padding: 10px;  /* ←内側の余白 */
+   }
+   #topbutton a {
+      /* ▼リンクの装飾 */
+	  font-size:14px;
+      color: white;        /* ←文字色 */
+      text-decoration: none; /* ←下線なし */
+   }
+   #topbutton a:hover {
+      /* ▼マウスが載ったときの装飾 */
+      color: yellow;              /* ←文字色 */
+   }
